@@ -18,6 +18,8 @@ repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
+    /// Option 2 -  when we get the error from test so running like gradle build -x test
+    // mavenCentral()
 }
 
 dependencies {
@@ -26,6 +28,16 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+
+    /// Opton - 2 
+    /*testImplementation(
+            'junit:junit:4.12',
+            'org.junit.jupiter:junit-jupiter-api:5.4.2'
+    )
+    testRuntime(
+            'org.junit.jupiter:junit-jupiter-engine:5.4.2',
+            'org.junit.vintage:junit-vintage-engine:5.4.2'
+    )*/
 }
 
 // Define the main class for the application
